@@ -1,6 +1,3 @@
-from json import JSONEncoder
-import json
-
 import numpy as np
 from flask import Flask
 from werkzeug.utils import secure_filename
@@ -10,17 +7,7 @@ from fastai.vision.all import *
 from fastai.imports import *
 from fastai.vision import *
 from io import BytesIO
-import pymysql
-from starlette.applications import Starlette
-from starlette.middleware.cors import CORSMiddleware
-from starlette.responses import HTMLResponse, JSONResponse
-from starlette.staticfiles import StaticFiles
 from flask import jsonify
-import boto3
-import asyncio
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-import base64
 
 app = Flask(__name__)
       
