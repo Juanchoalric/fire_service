@@ -27,7 +27,7 @@ app = Flask(__name__)
       
 def setup_learner():
     #await download_file(export_file_url, path / export_file_name)
-    path = "/home/juanchoalric/Desktop/fire_forest_disaster_service/app/models/model_v6_resnet50.pkl"
+    path = "models/model_low_resnet50.pkl"
     try:
         learn = load_learner(path)
         return learn
